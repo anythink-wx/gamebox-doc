@@ -1,6 +1,6 @@
 # 调用接口
 
-## 1、初始化
+### 1、初始化
 
 调用该函数初始化广告SDK，该函数需要在[GameSDK.init\(\)](../../ji-shu-dui-jie/ke-hu-duan-dui-jie/tiao-yong-jie-kou.md#chu-shi-hua)之后调用。
 
