@@ -193,3 +193,37 @@ GameSDK.pay(orderId, goodsName, goodsDesc, orderAmount, extension, notifyURL)
 | extension | 透传数据 | string | 非空 | 透传发送到游戏服务器 |
 | notifyURL | 支付付款通知地址 | string | 非空 | 支付成功通知游戏服务器 |
 
+## 设置支付返回回调
+
+平台将支付成功与否通知给游戏，函数调用位置应在GameSDK.init\(\)函数前调用。
+
+函数：
+
+```text
+GameSDK.setOnPayCB( func )
+```
+
+参数说明：
+
+| **参数** | **含义** | **类型** | **是否为空** | **备注** |
+| :--- | :--- | :--- | :--- | :--- |
+| func | onPay回调函数 | function | 非空 | 详见onPay函数说明 |
+
+onPay函数说明：
+
+```text
+function onPay( param )
+```
+
+| **参数** | **含义** | **类型** | **是否为空** | **备注** |
+| :--- | :--- | :--- | :--- | :--- |
+| param | 结束通知参数 | object | 非空 | Json对象，见下文 |
+
+```text
+Param Json对象:
+{
+    result,  // int 支付结果 0、成功，非0、错误号
+    message   // string 描述
+}
+```
+
