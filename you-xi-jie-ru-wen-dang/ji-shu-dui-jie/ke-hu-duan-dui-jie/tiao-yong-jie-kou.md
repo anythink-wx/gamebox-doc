@@ -20,6 +20,45 @@ GameSDK.init( version, gameId, gameKey, gameSecret )
 | gameKey | 游戏Key | string | 非空 | 后台游戏资料中获得 |
 | gameSecret | 游戏签名 | string | 非空 | 后台游戏资料中获得 |
 
+## 设置初始化结果回调
+
+设置游戏初始化回调函数，函数调用位置应在GameSDK.init\(\)函数前调用,否则初始化函数回调接收不到，通过该接口游戏可获取平台的用户信息。
+
+函数：
+
+```text
+GameSDK.setOnInitCB( func )
+```
+
+参数说明：
+
+| **参数** | **含义** | **类型** | **是否为空** | **备注** |
+| :--- | :--- | :--- | :--- | :--- |
+| func | onInit回调函数 | function | 非空 | 详见onInit函数说明 |
+
+onInit函数说明：
+
+```text
+function onInit( param )
+```
+
+| **参数** | **含义** | **类型** | **是否为空** | **备注** |
+| :--- | :--- | :--- | :--- | :--- |
+| param | init返回 | object | 非空 | Json对象，见下文 |
+
+```text
+Param Json对象:
+{
+error,  // int 错误代码：0、成功（见文末）
+userId,  // int当前玩家id
+nickName,  // string当前玩家名称
+headUrl,  // string 当前玩家头像地址
+location,  //string当前玩家地址
+sex,  // string 玩家性别："f" - 女；"m" - 男；"x" – 未知
+age // int 当前玩家年龄
+}
+```
+
 ## 游戏退出
 
 调用该函数后平台会立即结束游戏并关闭游戏窗口。
@@ -65,6 +104,40 @@ GameSDK.setAudio( enable, volume )
 | :--- | :--- | :--- | :--- | :--- |
 | enable | 是否开启 | int | 非空 | 0、关闭；1、开启 |
 | volume | 声量 | int | 非空 | 1~100 |
+
+## 设置游戏音量变化消息回调
+
+平台通知游戏声音变化，例：平台进入后台调用onAudio通知游戏关闭声音，当平台进入前台调用onAudio通知游戏开启声音。函数调用位置应在GameSDK.init\(\)函数前调用。
+
+函数：
+
+```text
+GameSDK.setOnAudioCB( func )
+```
+
+参数说明：
+
+| **参数** | **含义** | **类型** | **是否为空** | **备注** |
+| :--- | :--- | :--- | :--- | :--- |
+| func | onAudio回调函数 | function | 非空 | 详见onAudio函数说明 |
+
+onAudio函数说明：
+
+```text
+function onAudio( param )
+```
+
+| **参数** | **含义** | **类型** | **是否为空** | **备注** |
+| :--- | :--- | :--- | :--- | :--- |
+| param | 声音通知参数 | object | 非空 | Json对象，见下文 |
+
+```text
+Param Json对象:
+{
+    enable,  // int 是否开启 0、关，1、开
+    volume   // int 音量 1 - 100
+}
+```
 
 ## 设置游戏加载进度（SDK版本&gt;=2）
 
