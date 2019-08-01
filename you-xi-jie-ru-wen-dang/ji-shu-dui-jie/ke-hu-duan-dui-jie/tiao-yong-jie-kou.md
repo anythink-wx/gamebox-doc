@@ -8,17 +8,14 @@ _**注意：调用初始化函数之前，请先注册相关回调函数，如`s
 
 ```text
 函数：
-GameSDK.init( version, gameId, gameKey, gameSecret )
+GameSDK.init( gameId )
 ```
 
 参数说明：
 
 | **参数** | **含义** | **类型** | **是否为空** | **备注** |
 | :--- | :--- | :--- | :--- | :--- |
-| version | 接口版本号 | int | 非空 | 当前版本为：1 |
 | gameId | 游戏Id | int | 非空 | 后台游戏资料中获得 |
-| gameKey | 游戏Key | string | 非空 | 后台游戏资料中获得 |
-| gameSecret | 游戏签名 | string | 非空 | 后台游戏资料中获得 |
 
 ## 设置初始化结果回调
 

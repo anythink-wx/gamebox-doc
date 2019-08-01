@@ -71,7 +71,7 @@ _**建议在监听到横幅广告加载成功的回调函数中调用该函数�
 
 函数：
 
-`banner.show().then(funtion(){console.log('banner 广告显示成功')},funtion(err){ console.log('banner 广告显示失败') })`
+`banner.show().then(function(){console.log('banner 广告显示成功')},function(err){ console.log('banner 广告显示失败') })`
 
 方法说明：
 
@@ -224,7 +224,7 @@ _**建议在监听到插屏广告加载成功的回调函数中调用该函数�
 
 函数：
 
-`interstitialAd.show().then(funtion(){console.log('interstitialAd 广告显示成功')},funtion(err){ console.log('interstitialAd 广告显示失败') })`
+`interstitialAd.show().then(function(){console.log('interstitialAd 广告显示成功')},function(err){ console.log('interstitialAd 广告显示失败') })`
 
 方法说明：
 
@@ -379,7 +379,7 @@ _**展示成功后建议销毁广告对象，从新创建新的广告对象。**
 
 函数：
 
-`videoAd.show().then(funtion(){console.log('videoAd 广告显示成功')},funtion(err){ console.log('videoAd 广告显示失败') })`
+`videoAd.show().then(function(){console.log('videoAd 广告显示成功')},function(err){ console.log('videoAd 广告显示失败') })`
 
 方法说明：
 
