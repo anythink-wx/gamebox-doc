@@ -1,6 +1,6 @@
 # 自测工具
 
-## [1.0.7 - 2019-5-27](https://chukong.oss-cn-qingdao.aliyuncs.com/res/Cocos_Game_Tools_build190527.apk)
+## [1.0.7 - 2019-8-23](https://all.res-gamebox.cocos.com/res/Cocos_Game_Tools_build190823.apk)
 
 ### Fixed
 
