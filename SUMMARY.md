@@ -24,7 +24,7 @@
     * [订单查询接口](you-xi-jie-ru-wen-dang/ji-shu-dui-jie/zhi-fu-fu-wu-duan-jie-kou/ding-dan-cha-xun-jie-kou.md)
     * [订单异步通知接口](you-xi-jie-ru-wen-dang/ji-shu-dui-jie/zhi-fu-fu-wu-duan-jie-kou/ding-dan-yi-bu-tong-zhi-jie-kou.md)
     * [签名生成规则](you-xi-jie-ru-wen-dang/ji-shu-dui-jie/zhi-fu-fu-wu-duan-jie-kou/qian-ming-sheng-cheng-gui-ze.md)
-  * [基础能力](you-xi-jie-ru-wen-dang/ji-shu-dui-jie/ji-chu-neng-li/README.md)
+  * [小游戏基础能力](you-xi-jie-ru-wen-dang/ji-shu-dui-jie/ji-chu-neng-li/README.md)
     * [系统](you-xi-jie-ru-wen-dang/ji-shu-dui-jie/ji-chu-neng-li/xi-tong.md)
     * [分包加载](you-xi-jie-ru-wen-dang/ji-shu-dui-jie/ji-chu-neng-li/fen-bao-jia-zai.md)
     * [设备](you-xi-jie-ru-wen-dang/ji-shu-dui-jie/ji-chu-neng-li/she-bei.md)
