@@ -18,8 +18,6 @@
 ```text
 {
    gameId: 100001, 
-   gameKey: Zd2cYz3S#2, 
-   gameScrect: 3xdkakdsl2cskd, 
    gameType: 对战类游戏/非对战类游戏,
    gameMode: h5/runtime/h5外链,
    loadType: file/url, 
@@ -50,18 +48,6 @@
       <td style="text-align:left">&#x901A;&#x8FC7;CP&#x540E;&#x53F0;&#x83B7;&#x53D6;</td>
     </tr>
     <tr>
-      <td style="text-align:left">gameKey</td>
-      <td style="text-align:left">&#x6E38;&#x620F;Key</td>
-      <td style="text-align:left">&#x5B57;&#x7B26;&#x4E32;</td>
-      <td style="text-align:left">&#x901A;&#x8FC7;CP&#x540E;&#x53F0;&#x83B7;&#x53D6;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">gameSecret</td>
-      <td style="text-align:left">&#x6E38;&#x620F;Secret</td>
-      <td style="text-align:left">&#x5B57;&#x7B26;&#x4E32;</td>
-      <td style="text-align:left">&#x901A;&#x8FC7;CP&#x540E;&#x53F0;&#x83B7;&#x53D6;</td>
-    </tr>
-    <tr>
       <td style="text-align:left">loadType</td>
       <td style="text-align:left">&#x6E38;&#x620F;&#x52A0;&#x8F7D;&#x7C7B;&#x578B;</td>
       <td style="text-align:left">&#x5B57;&#x7B26;&#x4E32;</td>
@@ -71,13 +57,13 @@
       <td style="text-align:left">gameMode</td>
       <td style="text-align:left">&#x6E38;&#x620F;&#x52A0;&#x8F7D;&#x5F62;&#x5F0F;</td>
       <td style="text-align:left">&#x5B57;&#x7B26;&#x4E32;</td>
-      <td style="text-align:left">1&#x4EE3;&#x8868;runtime&#x6E38;&#x620F;&#xFF0C;2&#x4EE3;&#x8868;H5&#x6E38;&#x620F;</td>
+      <td style="text-align:left">runtime&#x3001;H5&#x6E38;&#x620F;&#x94FE;&#x63A5;&#x3001;H5&#x6E38;&#x620F;</td>
     </tr>
     <tr>
       <td style="text-align:left">gameType</td>
       <td style="text-align:left">&#x6E38;&#x620F;&#x7C7B;&#x578B;</td>
       <td style="text-align:left">&#x5B57;&#x7B26;&#x4E32;</td>
-      <td style="text-align:left">1&#x4EE3;&#x8868;cocos&#x5E73;&#x53F0;&#x5BF9;&#x6218;&#x6E38;&#x620F;&#xFF0C;&#x5176;&#x4ED6;&#x4EE3;&#x8868;&#x975E;&#x5BF9;&#x6218;&#x6E38;&#x620F;</td>
+      <td style="text-align:left">&#x5BF9;&#x6218;&#x6E38;&#x620F;&#x3001;&#x975E;&#x5BF9;&#x6218;&#x6E38;&#x620F;</td>
     </tr>
     <tr>
       <td style="text-align:left">loadLocation</td>
