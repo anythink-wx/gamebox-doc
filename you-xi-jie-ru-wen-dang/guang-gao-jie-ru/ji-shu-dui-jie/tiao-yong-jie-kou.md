@@ -19,7 +19,7 @@ AdSDK.init();
 函数：
 
 ```text
-var banner=AdSDK. createBannerAd(adId,bannerAdId,position) 
+var banner=AdSDK.createBannerAd(adId,bannerAdId,position); 
 ```
 
 参数说明：
@@ -151,7 +151,7 @@ adId,  // string 加载banner成功的广告Id
 函数：
 
 ```text
-banner.onError (func(param));
+banner.onError(func(param));
 ```
 
 方法说明：
@@ -190,7 +190,7 @@ errorCode列表
 函数：
 
 ```text
-banner.offLoad (func);
+banner.offLoad(func);
 ```
 
 参数说明：
@@ -206,7 +206,7 @@ banner.offLoad (func);
 函数：
 
 ```text
-banner.offError (func);
+banner.offError(func);
 ```
 
 参数说明：
@@ -290,7 +290,7 @@ interstitialAd.destroy();
 函数：
 
 ```text
-interstitialAd.onLoad (func(param));
+interstitialAd.onLoad(func(param));
 ```
 
 方法说明：

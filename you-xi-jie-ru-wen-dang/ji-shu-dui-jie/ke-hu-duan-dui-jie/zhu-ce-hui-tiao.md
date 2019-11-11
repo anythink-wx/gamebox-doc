@@ -11,7 +11,7 @@ description: 该目录下回调函数需要在GameSDK.init()函数调用前调�
 函数：
 
 ```text
-GameSDK.setOnPauseCB( func )
+GameSDK.setOnPauseCB(func)
 ```
 
 参数说明：
@@ -33,7 +33,7 @@ function onPause()
 函数：
 
 ```text
-GameSDK.setOnResumeCB( func )
+GameSDK.setOnResumeCB(func)
 ```
 
 参数说明：
