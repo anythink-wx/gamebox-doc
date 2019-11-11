@@ -10,7 +10,9 @@ description: 该目录下回调函数需要在GameSDK.init()函数调用前调�
 
 函数：
 
-`GameSDK.setOnPauseCB( func )`
+```text
+GameSDK.setOnPauseCB( func )
+```
 
 参数说明：
 
@@ -20,11 +22,9 @@ description: 该目录下回调函数需要在GameSDK.init()函数调用前调�
 
 onPause函数说明：
 
-`function onPause()`
-
-| **参数** | **含义** | **类型** | **是否为空** | **备注** |
-| :--- | :--- | :--- | :--- | :--- |
-| 无 |  |  |  |  |
+```text
+function onPause()
+```
 
 ## 设置游戏继续回调
 
@@ -32,7 +32,9 @@ onPause函数说明：
 
 函数：
 
-`GameSDK.setOnResumeCB( func )`
+```text
+GameSDK.setOnResumeCB( func )
+```
 
 参数说明：
 
@@ -42,11 +44,9 @@ onPause函数说明：
 
 onResume函数说明：
 
-`function onResume()`
-
-| **参数** | **含义** | **类型** | **是否为空** | **备注** |
-| :--- | :--- | :--- | :--- | :--- |
-| 无 |  |  |  |  |
+```text
+function onResume()
+```
 
 
 
