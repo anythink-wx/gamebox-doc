@@ -19,6 +19,10 @@ GameSDK.init( gameId )
 
 ## 设置初始化结果回调
 
+## 设置初始化结果回调
+
+设置游戏初始化回调函数，函数调用位置应在GameSDK.init\(\)函数前调用,否则初始化函数回调接收不到，通过该接口游戏可获取平台的用户信息。
+
 设置游戏初始化回调函数，函数调用位置应在GameSDK.init\(\)函数前调用,否则初始化函数回调接收不到，通过该接口游戏可获取平台的用户信息。
 
 函数：
@@ -26,6 +30,8 @@ GameSDK.init( gameId )
 ```text
 GameSDK.setOnInitCB( func )
 ```
+
+参数说明：
 
 参数说明：
 
@@ -104,7 +110,13 @@ GameSDK.setAudio( enable, volume )
 
 ## 设置游戏音量变化消息回调
 
+## 设置游戏音量变化消息回调
+
 平台通知游戏声音变化，例：平台进入后台调用onAudio通知游戏关闭声音，当平台进入前台调用onAudio通知游戏开启声音。函数调用位置应在GameSDK.init\(\)函数前调用。
+
+平台通知游戏声音变化，例：平台进入后台调用onAudio通知游戏关闭声音，当平台进入前台调用onAudio通知游戏开启声音。函数调用位置应在GameSDK.init\(\)函数前调用。
+
+函数：
 
 函数：
 
@@ -112,7 +124,17 @@ GameSDK.setAudio( enable, volume )
 GameSDK.setOnAudioCB( func )
 ```
 
+```text
+GameSDK.setOnAudioCB( func )
+```
+
 参数说明：
+
+参数说明：
+
+| **参数** | **含义** | **类型** | **是否为空** | **备注** |
+| :--- | :--- | :--- | :--- | :--- |
+| func | onAudio回调函数 | function | 非空 | 详见onAudio函数说明 |
 
 | **参数** | **含义** | **类型** | **是否为空** | **备注** |
 | :--- | :--- | :--- | :--- | :--- |
@@ -120,13 +142,31 @@ GameSDK.setOnAudioCB( func )
 
 onAudio函数说明：
 
+onAudio函数说明：
+
+```text
+function onAudio( param )
+```
+
 ```text
 function onAudio( param )
 ```
 
 | **参数** | **含义** | **类型** | **是否为空** | **备注** |
 | :--- | :--- | :--- | :--- | :--- |
+| param | 结束通知参数 | object | 非空 | Json对象，见下文 |
+
+| **参数** | **含义** | **类型** | **是否为空** | **备注** |
+| :--- | :--- | :--- | :--- | :--- |
 | param | 声音通知参数 | object | 非空 | Json对象，见下文 |
+
+```text
+Param Json对象:
+{
+    enable,  // int 是否开启 0、关，1、开
+    volume   // int 音量 1 - 100
+}
+```
 
 ```text
 Param Json对象:
@@ -192,7 +232,13 @@ GameSDK.pay(orderId, goodsName, goodsDesc, orderAmount, extension, notifyURL)
 
 ## 设置支付返回回调
 
+## 设置支付返回回调
+
 平台将支付成功与否通知给游戏，函数调用位置应在GameSDK.init\(\)函数前调用。
+
+平台将支付成功与否通知给游戏，函数调用位置应在GameSDK.init\(\)函数前调用。
+
+函数：
 
 函数：
 
@@ -200,13 +246,29 @@ GameSDK.pay(orderId, goodsName, goodsDesc, orderAmount, extension, notifyURL)
 GameSDK.setOnPayCB( func )
 ```
 
+```text
+GameSDK.setOnPayCB( func )
+```
+
+参数说明：
+
 参数说明：
 
 | **参数** | **含义** | **类型** | **是否为空** | **备注** |
 | :--- | :--- | :--- | :--- | :--- |
 | func | onPay回调函数 | function | 非空 | 详见onPay函数说明 |
 
+| **参数** | **含义** | **类型** | **是否为空** | **备注** |
+| :--- | :--- | :--- | :--- | :--- |
+| func | onPay回调函数 | function | 非空 | 详见onPay函数说明 |
+
 onPay函数说明：
+
+onPay函数说明：
+
+```text
+function onPay( param )
+```
 
 ```text
 function onPay( param )
@@ -215,6 +277,18 @@ function onPay( param )
 | **参数** | **含义** | **类型** | **是否为空** | **备注** |
 | :--- | :--- | :--- | :--- | :--- |
 | param | 结束通知参数 | object | 非空 | Json对象，见下文 |
+
+| **参数** | **含义** | **类型** | **是否为空** | **备注** |
+| :--- | :--- | :--- | :--- | :--- |
+| param | 结束通知参数 | object | 非空 | Json对象，见下文 |
+
+```text
+Param Json对象:
+{
+    result,  // int 支付结果 0、成功，非0、错误号
+    message   // string 描述
+}
+```
 
 ```text
 Param Json对象:
