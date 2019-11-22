@@ -1,23 +1,22 @@
 # 自测工具
 
-为了方便游戏开发者测试游戏与平台的对接，平台提供游戏测试工具App（[点我下载](../zi-ce-gong-ju.md)）。测试工具可以拉起游戏并提供游戏登录、支付、对战匹配功能。
+## [1.0.8 - 2019-10-25](https://chukong.oss-cn-qingdao.aliyuncs.com/res/Cocos_Game_Tools_build191025.apk)
 
-#### 开发者必须使用自测工具测试接入没有问题后才可打包提交平台审核。
+### Fixed
 
-测试工具可以通过两个方式拉起游戏：
+* 修复支付宝支付拉起异常
 
-1. 通过URL拉起游戏
-2. 通过本地游戏包拉起游戏
+### 使用方法：
 
-测试工具通过读取配置游戏参数，确定拉起的游戏类型，以及游戏拉起方式。
+1、开发者将APK文件下载下来安装到手机。
 
-配置游戏参数流程：启动自测工具点击左上角配置游戏按钮，进入游戏配置页面。根据需求配置并保存。
+2、打开APP点击左上角配置游戏按钮，进入游戏配置页面，参考以下配置游戏：
 
 配置文件格式：
 
 ```text
 {
-   gameId: 100001, 
+   gameId: 100001,  
    gameType: 对战类游戏/非对战类游戏,
    gameMode: h5/runtime/h5外链,
    loadType: file/url, 
@@ -63,7 +62,7 @@
       <td style="text-align:left">gameType</td>
       <td style="text-align:left">&#x6E38;&#x620F;&#x7C7B;&#x578B;</td>
       <td style="text-align:left">&#x5B57;&#x7B26;&#x4E32;</td>
-      <td style="text-align:left">&#x5BF9;&#x6218;&#x6E38;&#x620F;&#x3001;&#x975E;&#x5BF9;&#x6218;&#x6E38;&#x620F;</td>
+      <td style="text-align:left">&#x5BF9;&#x6218;&#x548C;&#x975E;&#x5BF9;&#x6218;&#x6E38;&#x620F;</td>
     </tr>
     <tr>
       <td style="text-align:left">loadLocation</td>
@@ -79,4 +78,13 @@
       </td>
     </tr>
   </tbody>
-</table>
+</table>3、配置完成后点击保存，然后启动游戏，测试工具会根据配置的参数拉起游戏。
+
+### 
+
+
+
+
+
+
+

@@ -57,7 +57,7 @@
     * [调用接口](you-xi-jie-ru-wen-dang/guang-gao-jie-ru/ji-shu-dui-jie/tiao-yong-jie-kou.md)
 * [资源下载](you-xi-jie-ru-wen-dang/zi-yuan-xia-zai/README.md)
   * [SDK下载](you-xi-jie-ru-wen-dang/zi-yuan-xia-zai/sdk-xia-zai.md)
-  * [自测工具](you-xi-jie-ru-wen-dang/zi-yuan-xia-zai/zi-ce-gong-ju.md)
+* [自测工具](you-xi-jie-ru-wen-dang/zi-ce-gong-ju.md)
 
 ## 渠道接入文档
 
