@@ -401,7 +401,7 @@ var videoAd=AdSDK.createRewardedVideoAd(adId,videoAdId,screenOrientation);
 | videoAdId | 广告位ID | String | 非空 | 视频广告位ID，需申请 |
 | screenOrientation | 展示样式 | Int | 非空 | 1、横屏；2、竖屏 |
 
-### 19、展示视频广告
+### 19、展示视频广告（激励奖励）
 
 调用该函数展示视频广告，返回值Promise，视频广告显示操作的结果。
 
@@ -413,7 +413,7 @@ _**展示成功后建议销毁广告对象，从新创建新的广告对象。**
 
 ```text
 videoAd.show().then(function(){
-        console.log('videoAd 广告显示成功')
+        console.log('videoAd 广告显示成功，发放激励奖励')
         },
         function(err){
         console.log('videoAd 广告显示失败')
@@ -472,7 +472,7 @@ videoAd.onLoad(func(param));
 ```text
 Param Json对象:
 {
-adId,  // string 加载banner成功的广告Id
+adId,  // string 加载视频广告成功的广告标识Id
 }
 ```
 
