@@ -10,5 +10,5 @@ description: 下载对应种类SDK压缩包，解压文件，获取GameSDK.js文
 
 ## H5游戏
 
-游戏客户端直接引用平台线上SDK地址即可，地址为：[https://1.res-gamebox.cocos.com/res/gameSDK.min.js](https://1.res-gamebox.cocos.com/res/gameSDK.min.js)
+游戏客户端直接引用平台线上SDK地址即可，地址为：[https://chukong.oss-cn-qingdao.aliyuncs.com/res/GameSDK.min.js](https://chukong.oss-cn-qingdao.aliyuncs.com/res/GameSDK.min.js)
 
