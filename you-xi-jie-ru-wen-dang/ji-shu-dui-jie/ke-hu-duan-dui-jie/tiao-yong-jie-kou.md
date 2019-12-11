@@ -1,39 +1,23 @@
 # 调用接口
 
-## 初始化
-
-调用平台任何其他的函数前，都要先调用该函数请求初始化SDK。初始化结果将会通过onInit回调函数返回给游戏。
-
-_**注意：调用初始化函数之前，请先注册相关回调函数，如`setOnInitCB（）、setOnPayCB()`等**_
-
-```text
-函数：
-GameSDK.init(gameId);
-```
-
-参数说明：
-
-| **参数** | **含义** | **类型** | **是否为空** | **备注** |
-| :--- | :--- | :--- | :--- | :--- |
-| gameId | 游戏Id | int | 非空 | 后台游戏资料中获得 |
-
 ## 设置初始化结果回调
-
-函数：
 
 设置游戏初始化回调函数，函数调用位置应在GameSDK.init\(\)函数前调用,否则初始化函数回调接收不到，通过该接口游戏可获取平台的用户信息。
 
 ```text
+函数：
 GameSDK.setOnInitCB(func);
 ```
 
-参数说明：
+方法说明：
 
 | **参数** | **含义** | **类型** | **是否为空** | **备注** |
 | :--- | :--- | :--- | :--- | :--- |
 | func | onInit回调函数 | function | 非空 | 详见onInit函数说明 |
 
 onInit函数说明：
+
+当平台收到游戏调用 init 方法，平台会调用 onInit 方法将用户信息返回给游戏
 
 ```text
 function onInit(param);
@@ -58,12 +42,30 @@ age // int 当前玩家年龄
 }
 ```
 
+## 初始化
+
+调用平台其他函数前\(设置回调监听需在init前调用\)，都要先调用该函数请求初始化SDK。初始化结果将会通过onInit回调函数返回给游戏。
+
+_**注意：调用初始化函数之前，请先注册相关回调函数，如`setOnInitCB（）、setOnPayCB()`等**_
+
+```text
+函数：
+GameSDK.init(gameId);
+```
+
+方法说明：游戏接入游戏sdk后，在游戏初始化完成后，调用该函数通知平台，平台收到init函数后，会调用onInit函数，将用户信息返回给游戏使用。（如游戏一直展示loding，原因是未正确接入GameSDK或未调用init函数）
+
+| **参数** | **含义** | **类型** | **是否为空** | **备注** |
+| :--- | :--- | :--- | :--- | :--- |
+| gameId | 游戏Id | int | 非空 | 后台游戏资料中获得 |
+
 ## 游戏退出
 
 调用该函数后平台会立即结束游戏并关闭游戏窗口。
 
+函数:
+
 ```text
-函数：
 GameSDK.quit(reason);
 ```
 
@@ -75,7 +77,7 @@ GameSDK.quit(reason);
 
 ## 设置屏幕朝向
 
-调用该函数可以设置游戏时的屏幕显示朝向。
+调用该函数可以设置游戏时的屏幕显示朝向。例如横屏游戏，需调用该函数通 知平台设置横屏。
 
 ```text
 函数：
@@ -88,89 +90,45 @@ GameSDK.setOrientation(orientation);
 | :--- | :--- | :--- | :--- | :--- |
 | orientation | 朝向 | int | 非空 | 0、 横屏； 1、竖屏 |
 
-## 设置声音
+## 设置支付返回回调
 
-调用该函数可以设置游戏时声音是否开启以及音量大小。
+平台将支付成功与否通知给游戏，函数调用位置应在GameSDK.init\(\)函数前调用。
 
 ```text
-函数：
-GameSDK.setAudio(enable, volume);
+函数
+GameSDK.setOnPayCB(func);
 ```
 
-参数说明：
+方法说明：
 
 | **参数** | **含义** | **类型** | **是否为空** | **备注** |
 | :--- | :--- | :--- | :--- | :--- |
-| enable | 是否开启 | int | 非空 | 0、关闭；1、开启 |
-| volume | 声量 | int | 非空 | 1~100 |
+| func | onPay回调函数 | function | 非空 | 详见onPay函数说明 |
 
-## 设置游戏音量变化消息回调
-
-平台通知游戏声音变化，例：平台进入后台调用onAudio通知游戏关闭声音，当平台进入前台调用onAudio通知游戏开启声音。函数调用位置应在GameSDK.init\(\)函数前调用。
-
-函数：
+onPay函数说明：平台会通过onPay函数通知游戏，游戏需设置好回调函数接收。
 
 ```text
-GameSDK.setOnAudioCB(func);
+函数
+function onPay(param)
 ```
-
-参数说明：
 
 | **参数** | **含义** | **类型** | **是否为空** | **备注** |
 | :--- | :--- | :--- | :--- | :--- |
-| func | onAudio回调函数 | function | 非空 | 详见onAudio函数说明 |
-
-onAudio函数说明：
-
-```text
-function onAudio(param);
-```
-
-函数：
-
-| **参数** | **含义** | **类型** | **是否为空** | **备注** |
-| :--- | :--- | :--- | :--- | :--- |
-| param | 结束通知参数 | object | 非空 | Json对象，见下文 |
+| param | 支付参数 | object | 非空 | Json对象，见下文 |
 
 ```text
 Param Json对象:
 {
-    enable,  // int 是否开启 0、关，1、开
-    volume   // int 音量 1 - 100
+    result,  // int 支付结果 0、成功，非0、错误号
+    message   // string 描述
 }
 ```
 
-## 设置游戏加载进度（SDK版本&gt;=2）
-
-SDK版本2开始，平台增加了统一的游戏加载进度界面，用于游戏后台加载时显示。
-
-游戏需要在初始化后，通过此函数报告游戏加载进度。加载界面将显示“加载中...”
-
-当进度&gt;=100%时，如果是对战类游戏，加载界面将提醒用户“等待对手进入中...”，并且游戏需要在对手都进入房间后，调用hideLoadProgress函数关闭加载界面。
-
-当进度&gt;=100%时，如果是非对战类游戏，加载界面将提醒用户“加载完成”，游戏需调用hideLoadProgress函数关闭加载界面。
-
-```text
-函数：
-GameSDK.setLoadProgress(progress);
-```
-
-参数说明：
-
-| **参数** | **含义** | **类型** | **是否为空** | **备注** |
-| :--- | :--- | :--- | :--- | :--- |
-| progress | 加载进度 | int | 非空 | 1-100 |
-
-## 隐藏游戏加载进度
-
-用于关闭加载进度界面。此后玩家才可以和游戏交互。
-
-```text
-函数：
-GameSDK.hideLoadProgress();
-```
+#### 如需同步支付订单信息，请查看支付服务端接口。
 
 ## 支付
+
+游戏调用该函数，拉起平台支付功能
 
 ```text
 函数：
@@ -188,9 +146,7 @@ GameSDK.pay(orderId,goodsName,goodsDesc,orderAmount,extension,notifyURL);
 | extension | 透传数据 | string | 非空 | 透传发送到游戏服务器 |
 | notifyURL | 支付付款通知地址 | string | 非空 | 支付成功通知游戏服务器 |
 
-## 设置支付返回回调
-
-平台将支付成功与否通知给游戏，函数调用位置应在GameSDK.init\(\)函数前调用。
+平台将支付成功与否通知给游戏，函数调用位置应在GameSDK.init\(\)函数之后调用。支付的结果将会通过onPay函数返回。游戏需在GameSDK.init\(\)函数之前，需将支付回调函数GameSDK.setOnPayCB设置好。
 
 函数：
 
@@ -222,37 +178,86 @@ Param Json对象:
 }
 ```
 
-## 设置支付返回回调
+## 设置游戏暂停回调
 
-平台将支付成功与否通知给游戏，函数调用位置应在GameSDK.init\(\)函数前调用。
-
-函数：
+游戏调用该函数设置游戏暂停回调，当平台进入后台，会调用 onPause 方法通知游戏
 
 ```text
-GameSDK.setOnPayCB(func);
+函数:
+GameSDK.setOnPauseCB( func )
+```
+
+#### 参数说明:
+
+| 参数 | 含义 | 类型 | 是否为空 | 备注 |
+| :--- | :--- | :--- | :--- | :--- |
+| func | onPause回调函数 | function | 非空 | 详见onPause函数 |
+
+**onPause 函数说明:** 
+
+当平台进入后台时，调用 onPause 函数，通知游戏
+
+```text
+function onPause()
+```
+
+## 设置游戏继续回调
+
+游戏调用该函数设置游戏继续回调，当平台从后台进入前台时，平台会调用 onResume 函数通知游戏
+
+```text
+函数:
+GameSDK.setOnResumeCB( func )
+```
+
+**参数说明：**
+
+| 参数 | 含义 | 类型 | 是否为空 | 备注 |
+| :--- | :--- | :--- | :--- | :--- |
+| func | onResume回调 | function | 非空 | 详见onResume函数 |
+
+#### onResume函数说明
+
+当平台从后台进入前台时，平台会调用 onResume 函数通知游戏
+
+```text
+function onResume()
+```
+
+## 设置音量变化回调
+
+游戏调用该函数，设置游戏音量变化消息回调，当平台声音变化时会通知游戏 声音变化。例:平台进入后台调用 onAudio 通知游戏关闭声音，当平台进入前 台调用 onAudio 通知游戏开启声音。\(建议游戏默认关闭声音，等平台调用该函 数在设置声音的开关\)
+
+```text
+函数:
+GameSDK.setOnAudioCB(func);
 ```
 
 参数说明：
 
 | **参数** | **含义** | **类型** | **是否为空** | **备注** |
 | :--- | :--- | :--- | :--- | :--- |
-| func | onPay回调函数 | function | 非空 | 详见onPay函数说明 |
+| func | onAudio回调函数 | function | 非空 | 详见onAudio函数说明 |
 
-onPay函数说明：
+onAudio函数说明：
+
+平台通知游戏声音变化，例：平台进入后台调用onAudio通知游戏关闭声音，当平台进入前台调用onAudio通知游戏开启声音。函数调用位置应在GameSDK.init\(\)函数前调用。
 
 ```text
-function onPay(param)
+function onAudio(param);
 ```
 
 | **参数** | **含义** | **类型** | **是否为空** | **备注** |
 | :--- | :--- | :--- | :--- | :--- |
-| param | 结束通知参数 | object | 非空 | Json对象，见下文 |
+| param | 声音参数 | object | 非空 | Json对象，见下文 |
+
+参数说明：
 
 ```text
 Param Json对象:
 {
-    result,  // int 支付结果 0、成功，非0、错误号
-    message   // string 描述
+    enable,  // int 是否开启 0、关，1、开
+    volume   // int 音量 1 - 100
 }
 ```
 

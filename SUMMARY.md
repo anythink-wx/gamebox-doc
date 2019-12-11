@@ -19,7 +19,6 @@
   * [客户端接入](you-xi-jie-ru-wen-dang/ji-shu-dui-jie/ke-hu-duan-dui-jie/README.md)
     * [导入资源](you-xi-jie-ru-wen-dang/ji-shu-dui-jie/ke-hu-duan-dui-jie/dao-ru-zi-yuan.md)
     * [调用接口](you-xi-jie-ru-wen-dang/ji-shu-dui-jie/ke-hu-duan-dui-jie/tiao-yong-jie-kou.md)
-    * [注册回调](you-xi-jie-ru-wen-dang/ji-shu-dui-jie/ke-hu-duan-dui-jie/zhu-ce-hui-tiao.md)
   * [支付服务端接口](you-xi-jie-ru-wen-dang/ji-shu-dui-jie/zhi-fu-fu-wu-duan-jie-kou/README.md)
     * [订单查询接口](you-xi-jie-ru-wen-dang/ji-shu-dui-jie/zhi-fu-fu-wu-duan-jie-kou/ding-dan-cha-xun-jie-kou.md)
     * [订单异步通知接口](you-xi-jie-ru-wen-dang/ji-shu-dui-jie/zhi-fu-fu-wu-duan-jie-kou/ding-dan-yi-bu-tong-zhi-jie-kou.md)
