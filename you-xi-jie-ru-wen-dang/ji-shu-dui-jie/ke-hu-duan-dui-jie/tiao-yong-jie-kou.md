@@ -4,8 +4,9 @@
 
 设置游戏初始化回调函数，函数调用位置应在GameSDK.init\(\)函数前调用,否则初始化函数回调接收不到，通过该接口游戏可获取平台的用户信息。
 
-```text
 函数：
+
+```text
 GameSDK.setOnInitCB(func);
 ```
 
@@ -48,12 +49,13 @@ age // int 当前玩家年龄
 
 _**注意：调用初始化函数之前，请先注册相关回调函数，如`setOnInitCB（）、setOnPayCB()`等**_
 
-```text
 函数：
+
+```text
 GameSDK.init(gameId);
 ```
 
-方法说明：游戏接入游戏sdk后，在游戏初始化完成后，调用该函数通知平台，平台收到init函数后，会调用onInit函数，将用户信息返回给游戏使用。（如游戏一直展示loding，原因是未正确接入GameSDK或未调用init函数）
+方法说明：游戏接入GameSDK后，在游戏初始化完成后，调用该函数通知平台，平台收到init函数后，会调用onInit函数，将用户信息返回给游戏使用。（如游戏一直展示loding，原因是未正确接入GameSDK或未调用init函数）
 
 | **参数** | **含义** | **类型** | **是否为空** | **备注** |
 | :--- | :--- | :--- | :--- | :--- |
@@ -63,8 +65,9 @@ GameSDK.init(gameId);
 
 调用该函数后平台会立即结束游戏并关闭游戏窗口。
 
+函数：
+
 ```text
-函数:
 GameSDK.quit(reason);
 ```
 
@@ -76,10 +79,11 @@ GameSDK.quit(reason);
 
 ## 设置屏幕朝向
 
-调用该函数可以设置游戏时的屏幕显示朝向。例如横屏游戏，需调用该函数通 知平台设置横屏。
+调用该函数可以设置游戏时的屏幕显示朝向。例如横屏游戏，需调用该函数通知平台设置横屏。
+
+函数：
 
 ```text
-函数：
 GameSDK.setOrientation(orientation);
 ```
 
@@ -91,10 +95,11 @@ GameSDK.setOrientation(orientation);
 
 ## 设置支付结果回调
 
-平台将支付成功与否通知给游戏，函数调用位置应在GameSDK.init\(\)函数前调用。
+平台将支付结果通知给游戏，游戏需调用该函数设置好回调函数。调用时机在GameSDK.init\(\)函数前调用。
+
+函数：
 
 ```text
-函数
 GameSDK.setOnPayCB(func);
 ```
 
@@ -104,10 +109,11 @@ GameSDK.setOnPayCB(func);
 | :--- | :--- | :--- | :--- | :--- |
 | func | onPay回调函数 | function | 非空 | 详见onPay函数说明 |
 
-onPay函数说明：平台会通过onPay函数通知游戏，游戏需设置好回调函数接收。
+onPay函数说明：平台会通过onPay函数通知游戏，游戏需设置好回调函数GameSDK.setOnPayCB\(\)接收。
+
+函数：
 
 ```text
-函数
 function onPay(param)
 ```
 
@@ -127,10 +133,11 @@ Param Json对象:
 
 ## 支付
 
-游戏调用该函数，拉起平台支付功能
+游戏调用该函数，拉起平台支付功能。
+
+函数：
 
 ```text
-函数：
 GameSDK.pay(orderId,goodsName,goodsDesc,orderAmount,extension,notifyURL);
 ```
 
@@ -145,14 +152,17 @@ GameSDK.pay(orderId,goodsName,goodsDesc,orderAmount,extension,notifyURL);
 | extension | 透传数据 | string | 非空 | 透传发送到游戏服务器 |
 | notifyURL | 支付付款通知地址 | string | 非空 | 支付成功通知游戏服务器 |
 
-平台将支付成功与否通知给游戏，函数调用位置应在GameSDK.init\(\)函数之后调用。支付的结果将会通过onPay函数返回。游戏需在GameSDK.init\(\)函数之前，需将支付回调函数GameSDK.setOnPayCB设置好。
+平台调用该函数之后，平台会将支付结果通知给游戏，函数调用位置应在GameSDK.init\(\)函数之后调用。
+
+支付的结果将会通过onPay函数返回。游戏需在GameSDK.init\(\)函数之前，需将支付回调函数GameSDK.setOnPayCB\(\)设置好。
 
 ## 设置游戏暂停回调
 
-游戏调用该函数设置游戏暂停回调，当平台进入后台，会调用 onPause 方法通知游戏
+游戏调用该函数设置游戏暂停回调，当平台进入后台，会调用传入的函数通知游戏
+
+函数：
 
 ```text
-函数:
 GameSDK.setOnPauseCB( func )
 ```
 
@@ -174,8 +184,9 @@ function onPause()
 
 游戏调用该函数设置游戏继续回调，当平台从后台进入前台时，平台会调用 onResume 函数通知游戏
 
+函数：
+
 ```text
-函数:
 GameSDK.setOnResumeCB( func )
 ```
 
