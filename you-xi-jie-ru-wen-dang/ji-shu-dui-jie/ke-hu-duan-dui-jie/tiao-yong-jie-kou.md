@@ -148,36 +148,6 @@ GameSDK.pay(orderId,goodsName,goodsDesc,orderAmount,extension,notifyURL);
 
 平台将支付成功与否通知给游戏，函数调用位置应在GameSDK.init\(\)函数之后调用。支付的结果将会通过onPay函数返回。游戏需在GameSDK.init\(\)函数之前，需将支付回调函数GameSDK.setOnPayCB设置好。
 
-函数：
-
-```text
-GameSDK.setOnPayCB(func);
-```
-
-参数说明：
-
-| **参数** | **含义** | **类型** | **是否为空** | **备注** |
-| :--- | :--- | :--- | :--- | :--- |
-| func | onPay回调函数 | function | 非空 | 详见onPay函数说明 |
-
-onPay函数说明：
-
-```text
-function onPay(param);
-```
-
-| **参数** | **含义** | **类型** | **是否为空** | **备注** |
-| :--- | :--- | :--- | :--- | :--- |
-| param | 结束通知参数 | object | 非空 | Json对象，见下文 |
-
-```text
-Param Json对象:
-{
-    result,  // int 支付结果 0、成功，非0、错误号
-    message   // string 描述
-}
-```
-
 ## 设置游戏暂停回调
 
 游戏调用该函数设置游戏暂停回调，当平台进入后台，会调用 onPause 方法通知游戏
