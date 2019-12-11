@@ -34,8 +34,9 @@ var banner=AdSDK.createBannerAd(adId,bannerAdId,position);
 
 游戏调用该函数注册回调函数，当加载广告成功时平台会通知游戏，游戏收到该回调后，在调用展示操作。
 
-```text
 函数：
+
+```text
 banner.onLoad (func());
 ```
 
@@ -49,8 +50,9 @@ banner.onLoad (func());
 
 游戏调用该函数注册回调函数，当加载广告失败时函数会执行
 
-```text
 函数：
+
+```text
 banner.onError(func(param));
 ```
 
@@ -108,12 +110,6 @@ banner.show().then(function(){
 ```text
 banner.hide();
 ```
-
-参数说明：
-
-| **参数** | **含义** | **类型** | **是否为空** | **备注** |
-| :--- | :--- | :--- | :--- | :--- |
-| 无 |  |  |  |  |
 
 ### 7、销毁横幅广告
 
@@ -179,7 +175,7 @@ interstitialAd.onError(func(param));
 
 | 参数 | 含义 | 类型 | 是否为空 | 备注 |
 | :--- | :--- | :--- | :--- | :--- |
-| param | 广告加载成功 | Json对象 | 非空 | Json对象，见下文 |
+| param | 广告加载失败 | Json对象 | 非空 | Json对象，见下文 |
 
 ```text
 Param Json对象:
@@ -225,12 +221,6 @@ interstitialAd.show().then(function(){
 interstitialAd.hide();
 ```
 
-参数说明：
-
-| **参数** | **含义** | **类型** | **是否为空** | **备注** |
-| :--- | :--- | :--- | :--- | :--- |
-| 无 |  |  |  |  |
-
 ### 13、销毁插屏广告
 
 调用广告实例的destroy函数销毁插屏广告
@@ -243,7 +233,7 @@ interstitialAd.destroy();
 
 ### 14、创建视频广告
 
-游戏调用该函数创建视频广告，仅支持单个视频广告创建。
+调用该函数创建视频广告，仅支持单个视频广告创建。**建议开发者提前创建的广告，这样展示广告的时候无需加载，体验上更好。**
 
 函数：
 
@@ -330,6 +320,8 @@ videoAd.show().then(function(){
 | :--- | :--- | :--- | :--- | :--- |
 | function\(\) | 展示广告成功回调 | function | 否 | 游戏自定义该方法 |
 | function\(err\) | 展示广告失败回调 | function | 否 | 游戏自定义该方法 |
+
+奖励操作，可以在广告展示成功回调中执行。
 
 ### 18、隐藏视频广告
 
