@@ -89,7 +89,7 @@ GameSDK.setOrientation(orientation);
 | :--- | :--- | :--- | :--- | :--- |
 | orientation | 朝向 | int | 非空 | 0、 横屏； 1、竖屏 |
 
-## 设置支付返回回调
+## 设置支付结果回调
 
 平台将支付成功与否通知给游戏，函数调用位置应在GameSDK.init\(\)函数前调用。
 
