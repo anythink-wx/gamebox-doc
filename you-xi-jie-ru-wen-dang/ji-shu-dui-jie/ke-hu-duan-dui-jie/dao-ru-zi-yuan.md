@@ -10,16 +10,5 @@ description: 下载对应种类SDK压缩包，解压文件，获取GameSDK.js文
 
 ## H5游戏
 
-## 方式一：
-
-* 游戏客户端的启动文件为:index.html 文件
-* 游戏客户端需要在游戏中引用 GameSDK.js 文件， 如:在 index.html 中的开 始位置加入 
-
-```text
-<script type = "text/javascript" src="./GameSDK.js" ></script>
-```
-
-## 方式二：
-
 游戏客户端直接引用平台线上SDK地址即可，地址为：[https://chukong.oss-cn-qingdao.aliyuncs.com/res/GameSDK.min.js](https://chukong.oss-cn-qingdao.aliyuncs.com/res/GameSDK.min.js)
 
