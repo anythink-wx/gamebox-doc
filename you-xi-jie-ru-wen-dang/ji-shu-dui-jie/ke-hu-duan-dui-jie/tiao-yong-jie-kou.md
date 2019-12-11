@@ -63,9 +63,8 @@ GameSDK.init(gameId);
 
 调用该函数后平台会立即结束游戏并关闭游戏窗口。
 
-函数:
-
 ```text
+函数:
 GameSDK.quit(reason);
 ```
 
@@ -217,11 +216,11 @@ onAudio函数说明：
 function onAudio(param);
 ```
 
+参数说明:
+
 | **参数** | **含义** | **类型** | **是否为空** | **备注** |
 | :--- | :--- | :--- | :--- | :--- |
 | param | 声音参数 | object | 非空 | Json对象，见下文 |
-
-参数说明：
 
 ```text
 Param Json对象:
