@@ -72,7 +72,7 @@ banner.onError(func(param));
 Param Json对象:
 {
     adId,  // string 加载失败的广告Id
-    errorCode//错误码
+    errorCode//string 错误码
 }
 errorCode请查看本文最下方错误列表
 ```
@@ -181,7 +181,7 @@ interstitialAd.onError(func(param));
 Param Json对象:
 {
     adId,  // string 加载失败的广告Id
-    errorCode//错误码
+    errorCode//string 错误码
 }
 errorCode请查看本文最下方错误列表
 ```
@@ -291,7 +291,7 @@ videoAd.onError(func(param));
 Param Json对象:
 {
     adId,  // string 加载失败的广告Id
-    errorCode//错误码
+    errorCode//string 错误码
 }
 errorCode请查看本文最下方错误列表
 ```
