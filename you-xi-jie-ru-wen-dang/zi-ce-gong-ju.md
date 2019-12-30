@@ -1,8 +1,8 @@
 # 自测工具
 
-## [1.0.9 - 2019-12-30](https://chukong.oss-cn-qingdao.aliyuncs.com/uploads/201912/apk/6b8fca7ebc30823e72d2ee936eed2647.apk)
+## [1.0.9 - 2019-12-30](https://chukong.oss-cn-qingdao.aliyuncs.com/uploads/201912/apk/d4d9887855701e6134eca452ade8427c.apk)
 
-修复h5广告创建异常
+修复h5游戏、runtime游戏广告创建异常
 
 ## [1.0.8 - 2019-10-25](https://chukong.oss-cn-qingdao.aliyuncs.com/res/Cocos_Game_Tools_build191025.apk)
 
