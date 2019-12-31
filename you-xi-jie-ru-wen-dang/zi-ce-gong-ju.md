@@ -1,6 +1,6 @@
 # 自测工具
 
-## [1.0.9 - 2019-12-30](https://chukong.oss-cn-qingdao.aliyuncs.com/uploads/201912/apk/d4d9887855701e6134eca452ade8427c.apk)
+## [1.0.9 - 2019-12-30](https://chukong.oss-cn-qingdao.aliyuncs.com/uploads/201912/apk/d48736564fcda09dd5bc1e7482081da0.apk)
 
 修复h5游戏、runtime游戏广告创建异常
 
