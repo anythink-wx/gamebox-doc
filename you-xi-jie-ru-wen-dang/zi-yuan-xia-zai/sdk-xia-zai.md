@@ -4,11 +4,9 @@ description: SDK包含登录、支付、广告等功能，小游戏和H5游戏�
 
 # SDK下载
 
-## 小游戏SDK：[20191126](https://chukong.oss-cn-qingdao.aliyuncs.com/res/Runtime_SDK_20191126.zip)
+## 小游戏SDK：[20200106](https://chukong.oss-cn-qingdao.aliyuncs.com/res/Runtime_SDK_20200106.zip)
 
-## H5游戏SDK：[20191209](https://chukong.oss-cn-qingdao.aliyuncs.com/res/H5_SDK_20191209.zip)
-
-## H5游戏demo: [20191227](http://chukong.oss-cn-qingdao.aliyuncs.com/uploads/201912/zip/fc0ab96bf447f3322eb8913b717f3c8a.zip)
+## H5游戏SDK: [20200106](https://chukong.oss-cn-qingdao.aliyuncs.com/res/GameSDK_20200106.zip)
 
 自测工具测试demo需要填入gameId:854584713
 
