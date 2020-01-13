@@ -1,4 +1,4 @@
 # 其他引擎
 
-使用其他引擎开发项目同学，可以通过商务同学获取打包技术支持。
+[小游戏移植Cocos runtime教程\(Laya、Egret\)](https://chukong.oss-cn-qingdao.aliyuncs.com/res/adapter_laya_Egret_doc.20200113.zip)
 
