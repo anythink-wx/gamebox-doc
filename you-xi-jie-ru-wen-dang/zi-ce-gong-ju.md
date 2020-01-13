@@ -1,14 +1,12 @@
 # 自测工具
 
+## [1.0.10 - 2020-01-13](http://chukong.oss-cn-qingdao.aliyuncs.com/uploads/202001/apk/3ba2c3062f412147c0028da83b5a1bc7.apk)
+
+首页增加开启chrome调试按钮，使用介绍看下方。
+
 ## [1.0.9 - 2020-01-08](http://chukong.oss-cn-qingdao.aliyuncs.com/uploads/202001/apk/a43c8a1a694ff0b6f168d984979ae066.apk)
 
 修复h5游戏、runtime游戏广告创建异常
-
-## [1.0.8 - 2019-10-25](https://chukong.oss-cn-qingdao.aliyuncs.com/res/Cocos_Game_Tools_build191025.apk)
-
-### Fixed
-
-* 修复支付宝支付拉起异常
 
 ### 使用方法：
 
