@@ -6,7 +6,7 @@
 
 ## 访问地址
 
-http://IP:PORT/jeekegame/api/gameQueryOrder
+https://api.gamebox.cocos.com/jeekegame/api/gameQueryOrder
 
 ## 请求参数
 
@@ -16,6 +16,7 @@ http://IP:PORT/jeekegame/api/gameQueryOrder
 | gameId | 游戏Id | 64 | **整数** | **非空** | 游戏Id |
 | cpOrderId | 商户订单号 | 64 | **字符串** | **非空** | 商户订单号 |
 | sign | 签名 | 10 | **字符串** | **非空** | 签名，生成方式参考文末 |
+| orderAmount | 订单金额 | 10 | **整数** | **非空** | 单位：分 |
 | extension | 扩展字段 |  | **字符串** | **可空** | 扩展字段 |
 
 注意：http post请求时传递参数中文要进行url编码
