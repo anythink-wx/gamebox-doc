@@ -1,5 +1,9 @@
 # 自测工具
 
+## [1.0.11 - 2020-03-10](http://chukong.oss-cn-qingdao.aliyuncs.com/uploads/202003/apk/78721531e94c0da5e469be44e6c8ede4.apk)
+
+游戏配置界面增加常见问题提示
+
 ## [1.0.10 - 2020-01-13](http://chukong.oss-cn-qingdao.aliyuncs.com/uploads/202001/apk/3ba2c3062f412147c0028da83b5a1bc7.apk)
 
 首页增加开启chrome调试按钮，使用介绍看下方。
