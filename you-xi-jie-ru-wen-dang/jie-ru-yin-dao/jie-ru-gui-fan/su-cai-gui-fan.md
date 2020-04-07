@@ -42,7 +42,7 @@
 
 ## 素材规范模板下载
 
-\*\*\*\*[**点我下载**](https://chukong.oss-cn-qingdao.aliyuncs.com/res/%E5%8D%B3%E5%88%BB%E7%8E%A9%E5%B0%8F%E6%B8%B8%E6%88%8F%E4%B8%AD%E5%BF%83%E7%B4%A0%E6%9D%90%E8%A7%84%E8%8C%83.zip)\*\*\*\*
+\*\*\*\*[**点我**下载](https://chukong.oss-cn-qingdao.aliyuncs.com/res/%E6%B8%B8%E6%88%8F%E4%B8%AD%E5%BF%83%E7%B4%A0%E6%9D%90%E8%A7%84%E8%8C%83.zip)
 
 
 
