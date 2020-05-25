@@ -58,5 +58,3 @@
   * [SDK下载](you-xi-jie-ru-wen-dang/zi-yuan-xia-zai/sdk-xia-zai.md)
 * [自测工具](you-xi-jie-ru-wen-dang/zi-ce-gong-ju.md)
 
-## 渠道接入文档
-
