@@ -10,3 +10,6 @@
 
 3. 游戏客户端调用平台客户端quit命令，结束游戏
 
+* [导入资源](dao-ru-zi-yuan.md)
+* [调用接口](tiao-yong-jie-kou.md)
+
