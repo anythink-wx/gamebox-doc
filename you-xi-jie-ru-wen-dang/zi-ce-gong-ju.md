@@ -86,7 +86,9 @@
       </td>
     </tr>
   </tbody>
-</table>3、配置完成后点击保存，然后启动游戏，测试工具会根据配置的参数拉起游戏。
+</table>
+
+3、配置完成后点击保存，然后启动游戏，测试工具会根据配置的参数拉起游戏。
 
 ## 关于小游戏chrome调试
 
@@ -94,7 +96,7 @@
 
 ### 开启chrome调试
 
-在chrome游览器中输入链接地址    **chrome-devtools://devtools/bundled/inspector.html?v8only=true&ws=xxx.xxx.xxx.xxx:5086/00010002-0003-4004-8005-000600070008**   , 其中 xxx.xxx.xxx.xxx 为局域网中 Android/iOS 设备的 IP 地址。使用自测工具，配置游戏成功后，回到主界面，主界面点击启动游戏，自测工具会停在初始化游戏环境界面，等待 JS 调试器连接，刷新chrome后，连接成功后，进入游戏。
+在chrome游览器中输入链接地址    **devtools://devtools/bundled/inspector.html?v8only=true&ws=xxx.xxx.xxx.xxx:5086/00010002-0003-4004-8005-000600070008**   , 其中 xxx.xxx.xxx.xxx 为局域网中 Android/iOS 设备的 IP 地址。使用自测工具，配置游戏成功后，回到主界面，主界面点击启动游戏，自测工具会停在初始化游戏环境界面，等待 JS 调试器连接，刷新chrome后，连接成功后，进入游戏。
 
 ### **开始调试**
 

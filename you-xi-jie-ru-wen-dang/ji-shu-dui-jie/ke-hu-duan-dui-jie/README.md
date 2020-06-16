@@ -1,5 +1,8 @@
 # 客户端接入
 
+* [导入资源](dao-ru-zi-yuan.md)
+* [调用接口](tiao-yong-jie-kou.md)
+
 ## 非对战游戏接口调用时序图如下： ![](../../../.gitbook/assets/tu-pian-17.png) 
 
 说明：
@@ -9,7 +12,4 @@
 2. 游戏客户端通过onInit回调接口获得init函数的返回的用户信息结果 
 
 3. 游戏客户端调用平台客户端quit命令，结束游戏
-
-* [导入资源](dao-ru-zi-yuan.md)
-* [调用接口](tiao-yong-jie-kou.md)
 
