@@ -1,5 +1,9 @@
 # 自测工具
 
+## [1.0.12 - 2020-07-21](https://chukong.oss-cn-qingdao.aliyuncs.com/res/Cocos_Game_Tools_v1.0.12.apk)
+
+增加文件选择功能
+
 ## [1.0.11 - 2020-03-10](http://chukong.oss-cn-qingdao.aliyuncs.com/uploads/202003/apk/78721531e94c0da5e469be44e6c8ede4.apk)
 
 游戏配置界面增加常见问题提示
