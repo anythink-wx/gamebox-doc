@@ -1,5 +1,9 @@
 # 自测工具
 
+## [1.0.13 - 2020-09-03](https://all.res-gamebox.cocos.com/res/Cocos_Game_Tools_v1.0.13.apk)
+
+增加扫描二维码导入的功能
+
 ## [1.0.12 - 2020-07-21](https://chukong.oss-cn-qingdao.aliyuncs.com/res/Cocos_Game_Tools_v1.0.12.apk)
 
 增加文件选择功能
