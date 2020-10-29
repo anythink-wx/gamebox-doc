@@ -1,6 +1,6 @@
 # 使用2.0.7、2.0.8、2.0.9版本Creator打包
 
-一、下载 [**runtime-packer**](http://test-runtime.cocos.com/cocos-runtime-demo/creator/CocosCreator-v2.0.8-runtime-packer-190301.zip) 解压后放到 Creator 编辑器安装路径下的 **Resources/builtin** 目录下即可。
+一、下载[ **runtime-packer**](https://all.res-gamebox.cocos.com/res/runtime-pack_2.0.7~2.0.9.zip) 解压后放到 Creator 编辑器安装路径下的 **Resources/builtin** 目录下即可。
 
 ![](../../../.gitbook/assets/runtime-packer-path.jpg)
 
