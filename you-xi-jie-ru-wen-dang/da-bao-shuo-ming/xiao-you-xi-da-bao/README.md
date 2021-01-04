@@ -6,7 +6,7 @@ description: 开发者需要使用Cocos Creator来构建发布版本的cpk文件
 
 ### 发布流程 <a id="&#x53D1;&#x5E03;&#x6D41;&#x7A0B;"></a>
 
-一、使用 Cocos Creator 打开需要发布的项目工程，在 **构建发布** 面板的 **发布平台** 中选择 **即刻玩小游戏**。
+一、使用 Cocos Creator 打开需要发布的项目工程，在 **构建发布** 面板的 **发布平台** 中选择 **CocosPlay**。
 
 ![](../../../.gitbook/assets/build_cpk.jpg)
 
@@ -26,5 +26,5 @@ description: 开发者需要使用Cocos Creator来构建发布版本的cpk文件
 
 **构建发布** 面板的相关参数设置完成后，点击 **构建**。构建完成后点击 **发布路径** 后面的 **打开** 按钮来打开构建发布包，可以看到在默认发布路径 build 目录下生成了 **jkw-game** 目录，该目录就是导出的即刻玩小游戏工程目录和 cpk，cpk 包在 **/build/jkw-game** 目录下。
 
-![](https://docs.cocos.com/creator/manual/zh/publish/publish-jkw-games/package.png)
+![](../../../.gitbook/assets/build_cpk_path.jpg)
 
