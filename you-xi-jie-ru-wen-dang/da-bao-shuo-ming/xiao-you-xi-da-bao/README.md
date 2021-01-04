@@ -8,7 +8,7 @@ description: 开发者需要使用Cocos Creator来构建发布版本的cpk文件
 
 一、使用 Cocos Creator 打开需要发布的项目工程，在 **构建发布** 面板的 **发布平台** 中选择 **即刻玩小游戏**。
 
-![](https://docs.cocos.com/creator/manual/zh/publish/publish-jkw-games/build.png)
+![](../../../.gitbook/assets/build_cpk.jpg)
 
 相关参数配置具体的填写规则如下：
 
