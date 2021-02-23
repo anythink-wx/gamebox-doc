@@ -4,7 +4,7 @@
 
 邮件标题：即刻玩小游戏评测+《产品名称》+公司名+单机/对战/网游+H5/小游戏
 
-收件人：g-jkw@chukong-inc.com
+收件人：zhangqian1@cocos.com（抄送：chenfeng@cocos.com）
 
 内容格式：
 
