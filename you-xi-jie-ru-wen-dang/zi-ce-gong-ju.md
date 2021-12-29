@@ -1,5 +1,10 @@
 # 自测工具
 
+## [1.0.15 - 2021-12-29](https://all.res-gamebox.cocos.com/res/Cocos_Game_Tools_v1.0.15.apk)
+
+1. 增加深度纹理扩展以及压缩问题astc、etc 扩展支持
+2. 修复稳定性问题
+
 ## [1.0.14 - 2020-09-08](https://all.res-gamebox.cocos.com/res/Cocos_Game_Tools_v1.0.14.apk)
 
 增加扫描二维码导入的功能
